@@ -13,6 +13,8 @@ class ListsController < ApplicationController
   end
 
   def index
+    #dotenvのテストのため利用
+    puts "作成したキー #{ENV['SECRET_KEY']}"
     @lists = List.all
   end
 
